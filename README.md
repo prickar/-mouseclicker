@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Mouse Tracker x Testing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A collaboration between Therese Johansson and Ida Mäkelä
 
-## Available Scripts
+## The application
 
-In the project directory, you can run:
+This application is a small SPA that displays different UI elemnts depending on where the user clicks or move the mouse.
 
-### `npm start`
+## Acceptance criterias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- App
+  - Coordinates from the mouse(onMouseMove) on the screen.
+  - Header, Footer and Card components.
+- Header
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Cointains title and subtitle for the page and a count of how many times the user has clicked the button component "GetAStar"
 
-### `npm test`
+- Main
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Render main element.
 
-### `npm run build`
+- Card
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Title
+  - Information Text
+  - Result Box
+  - Get A Star button
+  - Clicky Button
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ClickyButton
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Result for ClickyButton event.
+  - Button with a fireevent.
 
-### `npm run eject`
+- Footer
+  - Footer text
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Overview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 1. **Header Component (Header.jsx)**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- This component represents the header of the web application.
 
-## Learn More
+#### 2. **Footer Component (Footer.jsx)**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The footer component.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 3. **Card Component (Card.jsx)**
 
-### Code Splitting
+- Represents a card-like section within the application.
+- Contains a title and information text.
+- Includes two buttons labeled 'Get a Star' and 'Clicky button'.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### 4. **ClickyButton Component (ClickyButton.jsx)**
 
-### Analyzing the Bundle Size
+- A button component, inferred from the 'Clicky button' button within the Card component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### 5. **MouseTracker Component (MouseTracker.jsx)**
 
-### Making a Progressive Web App
+- Tracks mouse movements and displays the X and Y coordinates.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src='./src/assets/mouse-clicker.png' alt='Mouse clicker inspiration page' style='height: auto; width: auto' />
