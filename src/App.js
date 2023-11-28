@@ -7,7 +7,7 @@ function App() {
 	const [count, setCount] = useState(0)
 
 	return (
-		<div className="App">
+		<div data-testid="app" className="App">
 			<Header title="Mouse Tracker" initialCount={count} />
 			<main>
 				<Card setCount={setCount} />

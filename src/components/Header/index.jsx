@@ -1,8 +1,4 @@
-// import { useState } from "react"
-
 const Header = ({ title, initialCount }) => {
-	// const [count, setCount] = useState(initialCount)
-
 	return (
 		<>
 			<header>
@@ -11,10 +7,6 @@ const Header = ({ title, initialCount }) => {
 			</header>
 
 			<div data-testid="count">Count: {initialCount}</div>
-
-			{/* <button onClick={() => setCount((prevCount) => prevCount + 1)}>
-				Get a Star
-			</button> */}
 		</>
 	)
 }

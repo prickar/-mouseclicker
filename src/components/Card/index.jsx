@@ -1,8 +1,4 @@
-// import { useState } from "react"
-
 const Card = ({ setCount }) => {
-	// const [count, setCount] = useState(0)
-
 	return (
 		<>
 			<div data-testid="card">
