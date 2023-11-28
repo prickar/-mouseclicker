@@ -37,6 +37,7 @@ describe("All header elements are rendered properly", () => {
 
 	// integration test
 	//F: Den testar bara siffran, inte hur många stjärnor som faktiskt syns
+	//Varför testas detta här??? Knappen är i Card
 	test("Count displays how many star images are displayed", () => {
 		render(<App />)
 
