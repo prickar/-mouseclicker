@@ -1,7 +1,7 @@
-import { useState } from "react"
+// import { useState } from "react"
 
 const Header = ({ title, initialCount }) => {
-	const [count, setCount] = useState(initialCount)
+	// const [count, setCount] = useState(initialCount)
 
 	return (
 		<>
@@ -10,11 +10,11 @@ const Header = ({ title, initialCount }) => {
 				<h2>Let the clickathon begin!</h2>
 			</header>
 
-			<div data-testid="count">Count: {count}</div>
+			<div data-testid="count">Count: {initialCount}</div>
 
-			<button onClick={() => setCount((prevCount) => prevCount + 1)}>
+			{/* <button onClick={() => setCount((prevCount) => prevCount + 1)}>
 				Get a Star
-			</button>
+			</button> */}
 		</>
 	)
 }
