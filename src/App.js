@@ -1,7 +1,9 @@
+import Header from "./components/Header";
+
 function App() {
   return (
     <div className="App">
-      <h1>Good Luck Buddy!</h1>
+      <Header title="Mouse Tracker" initialCount={0} />
     </div>
   );
 }
