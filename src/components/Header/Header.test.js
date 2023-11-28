@@ -42,9 +42,7 @@ describe("All header elements are rendered properly", () => {
 		render(<App />)
 
 		const counter = screen.getByTestId("count")
-		//F: Name behövs inte, hittar knappen ändå
-		// const starBtn = screen.getByRole("button", { name: "Get a Star" })
-		const starBtn = screen.getByRole("button")
+		const starBtn = screen.getByRole("button", { name: "Get a Star" })
 
 		expect(counter).toHaveTextContent("0")
 

@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react"
 import Card from "."
-import ClickyButton from "../components/ClickyButton"
+import ClickyButton from "../ClickyButton"
 import App from "../../App"
 
 describe("card has its expected elements", () => {
@@ -49,9 +49,7 @@ describe("card has its expected elements", () => {
 	test("Get a Star button is rendered correctly.", () => {
 		render(<Card />)
 
-		//F: Name behövs inte, hittar knappen ändå
-		// const starButton = screen.getByRole('button', { name: 'Get a Star' })
-		const starButton = screen.getByRole("button")
+		const starButton = screen.getByRole("button", { name: "Get a Star" })
 
 		expect(starButton).toBeInTheDocument()
 	})
