@@ -1,7 +1,7 @@
 const Header = ({ title, initialCount }) => {
 	return (
 		<>
-			<header>
+			<header className="flex flex-col items-center">
 				<h1>{title}</h1>
 				<h2>Let the clickathon begin!</h2>
 			</header>
