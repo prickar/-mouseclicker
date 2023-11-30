@@ -29,6 +29,7 @@ const Card = ({ setCount }) => {
 				>
 					Get a Star
 				</button>
+				
 				{stars.map((star, index) => (
           <img
             key={index}
