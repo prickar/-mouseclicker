@@ -17,5 +17,4 @@ const Card = ({ setCount }) => {
 		</>
 	)
 }
-
 export default Card
