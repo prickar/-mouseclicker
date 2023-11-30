@@ -6,7 +6,7 @@ import { useState } from "react"
 const Card = ({ setCount }) => {
 	const [stars, setstars] = useState([])
 
-	const handleClick = () => {
+	const handleShowImage = () => {
 		setCount((prevCount) => prevCount + 1)
 
 		const newStar = {
@@ -34,7 +34,7 @@ const Card = ({ setCount }) => {
 						<button
 							className="btn"
 							name="Get a Star"
-							onClick={handleClick}
+							onClick={handleShowImage}
 						>
 							Get a Star
 						</button>
