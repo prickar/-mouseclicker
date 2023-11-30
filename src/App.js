@@ -1,27 +1,31 @@
-import { useState } from "react"
-import Header from "./components/Header"
-import Card from "./components/Card"
-import Footer from "./components/Footer"
-import { handleMouseMove } from "../src/utils/utils"
+import { useState } from "react";
+import Header from "./components/Header";
+import Card from "./components/Card";
+import Footer from "./components/Footer";
+import { handleMouseMove } from "../src/utils/utils";
 
 function App() {
-	const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-	return (
-		<div
-			data-testid="app"
-			className="App bg-slate-950 text-white h-full p-4"
-			onMouseMove={handleMouseMove}
-		>
-			<div id="coor" data-testid="coor"></div>
+  return (
+    <div
+      data-testid="app"
+      className="App bg-slate-950 text-white min-h-screen flex flex-col"
+      onMouseMove={handleMouseMove}
+    >
+      <div id="coor" data-testid="coor"></div>
 
-			<Header title="Mouse Tracker" initialCount={count} />
-			<main>
-				<Card setCount={setCount} />
-			</main>
-			<Footer />
-		</div>
-	)
+      <Header title="Mouse Tracker" initialCount={count} />
+
+      <main className="flex-1">
+        <div className="h-full">
+          <Card setCount={setCount} />
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
