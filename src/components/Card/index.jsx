@@ -1,7 +1,8 @@
+import { useState } from "react"
 import ClickyButton from "../ClickyButton"
 import Moon from "../../assets/moon.png"
+import Star from "../../assets/icons8-hand-drawn-star-24.png"
 
-<<<<<<< HEAD
 const Card = ({ setCount }) => {
 	const [stars, setstars] = useState([])
 
@@ -16,12 +17,20 @@ const Card = ({ setCount }) => {
 
 		setstars([...stars, newStar])
 	}
-=======
-const Card = ({ setCount, onClick }) => {
->>>>>>> 901318558308030cbd4f2dd026443beb33fb1880
+
 	return (
 		<>
 			<div className="flex justify-center items-center min-h-screen">
+				{stars.map((star, index) => (
+					<img
+						key={index}
+						src={Star}
+						alt="Star"
+						className="absolute animate-[pulse_10s_ease-in-out_infinite]"
+						style={{ top: star.top, left: star.left }}
+					/>
+				))}
+
 				<div
 					data-testid="card"
 					className="relative bg-cover bg-center h-[500px] w-[500px]"
@@ -36,11 +45,7 @@ const Card = ({ setCount, onClick }) => {
 						<button
 							className="btn"
 							name="Get a Star"
-<<<<<<< HEAD
 							onClick={handleShowImage}
-=======
-							onClick={onClick}
->>>>>>> 901318558308030cbd4f2dd026443beb33fb1880
 						>
 							Get a Star
 						</button>
