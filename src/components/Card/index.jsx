@@ -1,6 +1,6 @@
 import ClickyButton from "../ClickyButton"
 import Star from '../../assets/icons8-hand-drawn-star-24.png'
-import Moon from '../../assets/moon.png';
+import Moon from '../../assets/moon2.png';
 import { useState } from "react"
 
 const Card = ({ setCount }) => {
