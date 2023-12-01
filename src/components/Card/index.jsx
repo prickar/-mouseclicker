@@ -4,18 +4,18 @@ import Moon from "../../assets/moon2.png"
 import { useState } from "react"
 
 const Card = ({ setCount }) => {
-	const [stars, setstars] = useState([])
+	const [stars, setStars] = useState([])
 
 	const handleShowImage = () => {
 		setCount((prevCount) => prevCount + 1)
 
 		const newStar = {
-			id: stars.lenght + 1,
+			id: stars.length + 1,
 			top: `${Math.random() * window.innerHeight}px`,
 			left: `${Math.random() * window.innerWidth}px`,
 		}
 
-		setstars([...stars, newStar])
+		setStars([...stars, newStar])
 	}
 
 	return (
@@ -41,7 +41,7 @@ const Card = ({ setCount }) => {
 						<p data-testid="infotext">
 							Click the button to see&nbsp;more&nbsp;stars
 						</p>
-						<ClickyButton />
+						<ClickyButton onButtonClick={handleShowImage} />
 						<button
 							className="btn bg-slate-500 p-2 rounded-md m-2 text-white"
 							name="Get a Star"
@@ -55,4 +55,5 @@ const Card = ({ setCount }) => {
 		</>
 	)
 }
+
 export default Card

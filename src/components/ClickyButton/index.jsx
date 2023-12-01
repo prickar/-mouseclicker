@@ -1,7 +1,12 @@
 import { useState } from "react"
 
-const ClickyButton = () => {
+const ClickyButton = ({ onButtonClick }) => {
 	const [clicked, setClicked] = useState(false)
+
+	const handleClick = () => {
+		setClicked(true)
+		onButtonClick() // Call the provided function when the button is clicked
+	}
 
 	return (
 		<div data-testid="resultbox">
@@ -10,7 +15,7 @@ const ClickyButton = () => {
 				<button
 					data-testid="clickybutton"
 					name="clicky button"
-					onClick={() => setClicked(true)}
+					onClick={handleClick}
 					disabled={clicked}
 					className="btn bg-slate-700 p-2 rounded-md"
 					style={{
