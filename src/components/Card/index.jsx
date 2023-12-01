@@ -1,6 +1,6 @@
 import ClickyButton from "../ClickyButton"
-import Star from '../../assets/icons8-hand-drawn-star-24.png'
-import Moon from '../../assets/moon2.png';
+import Star from "../../assets/icons8-hand-drawn-star-24.png"
+import Moon from "../../assets/moon2.png"
 import { useState } from "react"
 
 const Card = ({ setCount }) => {
@@ -33,7 +33,7 @@ const Card = ({ setCount }) => {
 
 				<div
 					data-testid="card"
-					className="relative bg-cover bg-center h-[300px] w-[300px] md:h-[500px] md:w-[500px] flex"
+					className="relative bg-cover bg-center h-[20vw] w-[20vw] md:h-[35vw] md:w-[35vw] flex"
 					style={{ backgroundImage: `url(${Moon})` }}
 				>
 					<div className="absolute inset-0 flex flex-col justify-center items-center text-black p-8 text-center h-full w-full">
