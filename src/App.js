@@ -13,7 +13,11 @@ function App() {
 			className="App bg-slate-950 text-white min-h-screen flex flex-col font-bangers"
 			onMouseMove={handleMouseMove}
 		>
-			<div id="coor" data-testid="coor"></div>
+			<div 
+			id="coor" 
+			data-testid="coor"
+			className="absolute"
+			></div>
 
 			<Header title="Mouse Tracker" initialCount={count} />
 
