@@ -20,7 +20,7 @@ const Card = ({ setCount }) => {
 
 	return (
 		<>
-			<div className="flex justify-center items-center min-h-screen">
+			<div className="flex justify-center items-center">
 				{stars.map((star, index) => (
 					<img
 						key={index}
@@ -33,17 +33,17 @@ const Card = ({ setCount }) => {
 
 				<div
 					data-testid="card"
-					className="relative bg-cover bg-center h-[500px] w-[500px]"
+					className="relative bg-cover bg-center h-[300px] w-[300px] md:h-[500px] md:w-[500px] flex"
 					style={{ backgroundImage: `url(${Moon})` }}
 				>
-					<div className="absolute inset-0 flex flex-col justify-center items-center text-white p-8">
+					<div className="absolute inset-0 flex flex-col justify-center items-center text-black p-8 text-center h-full w-full">
 						<h3>How it Works</h3>
 						<p data-testid="infotext">
 							Click the button to see more stars
 						</p>
 						<ClickyButton />
 						<button
-							className="btn"
+							className="btn bg-slate-500 bg-opacity-50 p-2 rounded-md"
 							name="Get a Star"
 							onClick={handleShowImage}
 						>
