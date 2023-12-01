@@ -41,7 +41,7 @@ const Card = ({ setCount }) => {
 						<p data-testid="infotext">
 							Click the button to see&nbsp;more&nbsp;stars
 						</p>
-						<ClickyButton onButtonClick={handleShowImage} />
+						<ClickyButton />
 						<button
 							className="btn bg-slate-500 p-2 rounded-md m-2 text-white"
 							name="Get a Star"
