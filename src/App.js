@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div
 			data-testid="app"
-			className="App bg-slate-950 text-white min-h-screen flex flex-col"
+			className="App bg-slate-950 text-white min-h-screen flex flex-col font-bangers"
 			onMouseMove={handleMouseMove}
 		>
 			<div id="coor" data-testid="coor"></div>
