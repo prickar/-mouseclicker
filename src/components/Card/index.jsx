@@ -33,17 +33,17 @@ const Card = ({ setCount }) => {
 
 				<div
 					data-testid="card"
-					className="relative bg-cover bg-center h-[20vw] w-[20vw] md:h-[35vw] md:w-[35vw] flex"
+					className="relative bg-cover bg-center h-[250px] w-[250px] md:h-[35vw] md:w-[35vw] flex"
 					style={{ backgroundImage: `url(${Moon})` }}
 				>
 					<div className="absolute inset-0 flex flex-col justify-center items-center text-black p-8 text-center h-full w-full">
-						<h3>How it Works</h3>
+						<h3 className=" text-xl">How it Works</h3>
 						<p data-testid="infotext">
-							Click the button to see more stars
+							Click the button to see&nbsp;more&nbsp;stars
 						</p>
 						<ClickyButton />
 						<button
-							className="btn bg-slate-500 bg-opacity-50 p-2 rounded-md"
+							className="btn bg-slate-500 p-2 rounded-md m-2 text-white"
 							name="Get a Star"
 							onClick={handleShowImage}
 						>
