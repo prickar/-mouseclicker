@@ -71,6 +71,6 @@ This was a fun project to build from just looking at the test! Here are some thi
 
 A unit test should test one component in isolation. Any integration tests using App should be made in the app.test.js file. Both header.test.js and card.test.js does this. Card for example has a test using app that could be replaced by card. In header there's an integration test that should be moved to app.test.js.
 
-Also in card.test.js there's a mention of a function name, handleShowImage, that is not in any actual tests. The tests shoukld be written with the user in mind and regarding what is showing up on screen.
+Also in card.test.js there's a mention of a function name, handleShowImage, that is not in any actual tests. The tests should be written with the user in mind and regarding what is showing up on screen.
 
 The integration tests for App regarding the star images should've included some test for the functionality that produces more stars. As it is written now it only tests whether or not one single star is shown on screen after a button is clicked. This would've also been helpful for us when we were developing the site. It was also unclear if the clicky button should've added a star or not since there was no test for that.
